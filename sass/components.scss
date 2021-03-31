@@ -6,10 +6,11 @@
   width: 100vw;
   height: 60px;
   display: flex;
-  position: fixed;
-  background-color: #131212;
-  opacity: 0.2;
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: space-between;
+  position: absolute;
+  top: 0;
+  align-items: center;
 
   .logo{
 
@@ -45,7 +46,7 @@ $arrow-head-thickness: $shaft-thickness;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  margin-top: 2em;
 }
 
 ul {
@@ -212,6 +213,8 @@ ul {
     > .text {
       margin: 0 $text-arrow-space 0 0;
       line-height: 1;
+      font-weight: 900;
+      font-size: 2rem;
     }
     
     > .the-arrow {
@@ -231,15 +234,10 @@ body{
     text-decoration:none;
     color:white;
   }
-  .containerPricing{
-    width:938px;
-    position:absolute;
-    top:50%;
-    left:30px;
-    right:0;
+  .pricing-section__container{
+    width: 100%;
+    text-align: center;
 
-    transform:translateY(-50%);
-    margin:auto;
     .card{
 
       margin:0 auto;
