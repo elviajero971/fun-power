@@ -12,9 +12,61 @@
   top: 0;
   align-items: center;
 
-  .logo{
-
+  
+/////////////////////////////////////// LOGO  //////////////////////////////////////////////////////////
+.logo {
+  text-align: center;
+  font-size: 3em;
+  margin-left: 50px;
+  a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    color: $yellow;
+    font-family: Audiowide;
+    -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+    animation: neon5 1.5s ease-in-out infinite alternate;
   }
+}
+
+/*glow for webkit*/
+
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #ddd, 0 0 40px $yellow, 0 0 70px $yellow, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #ddd, 0 0 10px #ddd, 0 0 15px #ddd, 0 0 20px $yellow, 0 0 35px $yellow, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+/*glow for mozilla*/
+
+@-moz-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #ddd, 0 0 40px $yellow, 0 0 70px $yellow, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #ddd, 0 0 10px #ddd, 0 0 15px #ddd, 0 0 20px $yellow, 0 0 35px $yellow, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #ddd, 0 0 40px $yellow, 0 0 70px $yellow, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #ddd, 0 0 10px #ddd, 0 0 15px #ddd, 0 0 20px $yellow, 0 0 35px $yellow, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+
+
+/////////////////////////////////////// ???  //////////////////////////////////////////////////////////
+
 
   .item{
     display: flex;

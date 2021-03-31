@@ -27,7 +27,7 @@ section {
 }
 
 .hero-section {
-  background-image: url("../img/2.png");
+  background-image: url("./img/2.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -46,7 +46,7 @@ section {
 }
 .about-section .about-section__img {
   width: 50%;
-  background-image: url("../img/3.jpg");
+  background-image: url("./img/3.jpg");
   background-position: center;
   background-size: cover;
   justify-content: center;
@@ -108,6 +108,48 @@ h1 {
   position: absolute;
   top: 0;
   align-items: center;
+  /*glow for webkit*/
+  /*glow for mozilla*/
+}
+.nav .logo {
+  text-align: center;
+  font-size: 3em;
+  margin-left: 50px;
+}
+.nav .logo a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #f7d200;
+  font-family: Audiowide;
+  -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+  animation: neon5 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #ddd, 0 0 40px #f7d200, 0 0 70px #f7d200, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #ddd, 0 0 10px #ddd, 0 0 15px #ddd, 0 0 20px #f7d200, 0 0 35px #f7d200, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+@-moz-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #ddd, 0 0 40px #f7d200, 0 0 70px #f7d200, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #ddd, 0 0 10px #ddd, 0 0 15px #ddd, 0 0 20px #f7d200, 0 0 35px #f7d200, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #ddd, 0 0 40px #f7d200, 0 0 70px #f7d200, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #ddd, 0 0 10px #ddd, 0 0 15px #ddd, 0 0 20px #f7d200, 0 0 35px #f7d200, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
 }
 .nav .item {
   display: flex;
