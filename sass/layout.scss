@@ -20,6 +20,35 @@ section{
   }
 }
 
+@media (max-width: 400px){
+
+  .hero-section{
+
+    .nav{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .hero-section__title{
+      font-size: 1rem;
+    }
+
+    button{
+      width: 80px;
+      font-size: 1rem;
+      height: 40px;
+    }
+
+  }
+}
+
 .about-section{
   width: 100%;
   height: 100vh;
