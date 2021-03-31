@@ -62,6 +62,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-around;
+
     h2{
       font-size: 6rem;
     }
@@ -69,5 +70,48 @@ section{
     p{
       font-size: 2rem;
     }
+
+   
+  }
+
+}
+
+.cta-section{
+
+  .cta-section__header{
+    background-image: url('../img/1.png');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h1{
+      font-size: 4rem;
+      text-transform: uppercase;
+      width: 30%;
+    }
+
+    button{
+      margin-top: 15rem;
+    }
+
+    p{
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+      width: 80%;
+    }
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    background-color: $yellow;
+    color: $black;
+    font-size: 2rem;
   }
 }
