@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="logo">
+      <a href="#">
+        FUNPOWER
+      </a>
+    </div>
+    <div class="item">
+      <h1><a href="about.html"> About </a></h1>
+      <h1><a href="pricing.html"> Pricing </a></h1>
+    </div>
+  </div>
+
+  <section class="pricing-section">
+    <form action="$ROUTEBASE?page=createSubscription&action=check" method="post">
+      <div class="form-input">
+          <label for="name">Votre nom :</label>
+          <input type="text" id="name" name="name">
+      </div>
+      <div class="form-input">
+          <label for="name">Votre prénom :</label>
+          <input type="text" id="firstname" name="firstname">
+      </div>
+      <div class="form-input">
+          <label for="mail">Votre e-mail :</label>
+          <input type="email" id="mail" name="mail">
+      </div>
+      <div class="form-input">
+          <label for="program-select">Choisissez un abonnement :</label>
+          <select name="program" id="program-select">
+              <option value="1">Essentiel</option>
+              <option value="2">Standard</option>
+              <option value="3">Premium</option>
+          </select>
+      </div>
+      <button>Submit</button>
+    </form>
+  </section>
+  
+</body>
+</html>
