@@ -35,10 +35,10 @@
 
 @-webkit-keyframes neon5 {
   from {
-    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #ddd, 0 0 40px $yellow, 0 0 70px $yellow, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow: 0 0 10px #555, 0 0 20px #555, 0 0 30px #555, 0 0 40px $yellow, 0 0 70px $yellow, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
   }
   to {
-    text-shadow: 0 0 5px #ddd, 0 0 10px #ddd, 0 0 15px #ddd, 0 0 20px $yellow, 0 0 35px $yellow, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow: 0 0 5px #555, 0 0 10px #555, 0 0 15px #555, 0 0 20px $yellow, 0 0 35px $yellow, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
   }
 }
 
@@ -46,20 +46,20 @@
 
 @-moz-keyframes neon5 {
   from {
-    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #ddd, 0 0 40px $yellow, 0 0 70px $yellow, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow: 0 0 10px #555, 0 0 20px #555, 0 0 30px #555, 0 0 40px $yellow, 0 0 70px $yellow, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
   }
   to {
-    text-shadow: 0 0 5px #ddd, 0 0 10px #ddd, 0 0 15px #ddd, 0 0 20px $yellow, 0 0 35px $yellow, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow: 0 0 5px #555, 0 0 10px #555, 0 0 15px #555, 0 0 20px $yellow, 0 0 35px $yellow, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
   }
 }
 
 
 @keyframes neon5 {
   from {
-    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #ddd, 0 0 40px $yellow, 0 0 70px $yellow, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow: 0 0 10px #555, 0 0 20px #555, 0 0 30px #555, 0 0 40px $yellow, 0 0 70px $yellow, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
   }
   to {
-    text-shadow: 0 0 5px #ddd, 0 0 10px #ddd, 0 0 15px #ddd, 0 0 20px $yellow, 0 0 35px $yellow, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow: 0 0 5px #555, 0 0 10px #555, 0 0 15px #555, 0 0 20px $yellow, 0 0 35px $yellow, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
   }
 }
 
@@ -307,7 +307,7 @@ body{
       transition:all .2s;
       cursor:pointer;
       opacity:0.5;
-      box-shadow: 0px 17px 46px -10px #777777;
+      box-shadow: 0px 17px 46px -10px #555777;
       height:470px;
       border-radius:14px;
       &:nth-of-type(1){
