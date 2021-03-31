@@ -51,7 +51,8 @@ section {
     align-items: center;
   }
   .hero-section .hero-section__title {
-    font-size: 1rem;
+    font-size: 3rem;
+    width: 80%;
   }
   .hero-section button {
     width: 80px;
@@ -88,9 +89,31 @@ section {
   height: 50%;
 }
 .about-section .about-section__content .about-section__content--container p {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
+@media (max-width: 400px) {
+  .about-section {
+    flex-direction: column;
+  }
+  .about-section .about-section__img {
+    width: 100%;
+    min-height: 300px;
+  }
+  .about-section .about-section__img h1 {
+    font-size: 2rem;
+  }
+  .about-section .about-section__content {
+    width: 100%;
+  }
+  .about-section .about-section__content .about-section__content--container {
+    width: 80%;
+  }
+  .about-section .about-section__content .about-section__content--container p {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
 .pricing-section .pricing-section__header {
   display: flex;
   align-items: center;
@@ -103,6 +126,32 @@ section {
   font-size: 2rem;
 }
 
+@media (max-width: 400px) {
+  .pricing-section {
+    flex-direction: column;
+    margin-top: 8rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .pricing-section .pricing-section__header {
+    flex-direction: column;
+  }
+  .pricing-section .pricing-section__header h2 {
+    font-size: 3rem;
+    width: 80%;
+  }
+  .pricing-section .pricing-section__header p {
+    width: 80%;
+  }
+  .pricing-section .pricing-section__container {
+    height: 100%;
+  }
+  .pricing-section .pricing-section__container .card {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}
 .cta-section .cta-section__header {
   background-image: url("../img/1.png");
   background-position: center;
@@ -136,6 +185,33 @@ section {
   font-size: 2rem;
 }
 
+@media (max-width: 400px) {
+  .cta-section {
+    height: 100%;
+  }
+  .cta-section .cta-section__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta-section .cta-section__header h1 {
+    font-size: 2.5rem;
+    width: 80%;
+  }
+  .cta-section .cta-section__header button {
+    justify-content: flex-end;
+  }
+  .cta-section footer {
+    flex-direction: column;
+    height: 100%;
+  }
+  .cta-section footer .content {
+    width: 80%;
+    font-size: 1.3rem;
+    height: 20%;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
