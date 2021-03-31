@@ -36,7 +36,7 @@ section {
   justify-content: center;
 }
 .hero-section .hero-section__title {
-  font-size: 10rem;
+  font-size: 7rem;
 }
 
 @media (max-width: 400px) {
@@ -64,7 +64,6 @@ section {
   width: 100%;
   height: 100vh;
   display: flex;
-  margin-top: 50px;
 }
 .about-section .about-section__img {
   width: 50%;
