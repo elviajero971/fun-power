@@ -664,6 +664,9 @@ body .pricing-section__container .card_inner__cta button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
+}
+.pricing-section section {
   height: 100%;
 }
 
