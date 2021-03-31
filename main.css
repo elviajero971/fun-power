@@ -244,6 +244,14 @@ h1 {
   /*glow for webkit*/
   /*glow for mozilla*/
 }
+.nav h1 a {
+  color: #ffe44b;
+}
+.nav .item {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
 .nav .logo {
   text-align: center;
   font-size: 3em;
@@ -284,12 +292,12 @@ h1 {
     text-shadow: 0 0 5px #555, 0 0 10px #555, 0 0 15px #555, 0 0 20px #ffe44b, 0 0 35px #ffe44b, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
   }
 }
-.nav .item {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-}
 
+@media (max-width: 400px) {
+  .nav {
+    height: 130px;
+  }
+}
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
