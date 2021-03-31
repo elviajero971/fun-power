@@ -1,0 +1,204 @@
+/* Général */
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../public/font/Raleway-Regular.ttf') format('truetype');
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../public/font/Dosis-Regular.ttf') format('truetype');
+    font-style: bold;
+}
+
+
+body {
+	background: url(../public/images/fond-jungle-02.jpg) no-repeat center center fixed;
+ 	background-color: #ffffff;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	height:100vh;
+ 	margin:0px;
+ 	padding:0px;
+ 	font-family: Dosis, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  color: #478235;
+}
+
+h2 {
+  font-size: 2em;
+  color: #36496f;
+  font-weight: bold;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+/* Connection */
+
+.connexion {
+  display: flex;
+  background-color: #333;
+  width:100%;
+  padding:0px;
+  justify-content: flex-end;
+}
+
+.blue {
+  color:#3694d7;
+  padding: 5px 15px 5px 0px;
+}
+
+
+/* Navigation */
+
+.navigContainer {
+  display: flex;
+  align-items: left;
+  padding:0px;
+  background-color:  #e4edf4;
+}
+
+.menuButton {
+  padding:15px 10px 15px 10px;
+  text-decoration: none;
+  border: none;
+  transition-duration: 0.4s;
+  color: #353f4f;
+	font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+.menuButton:hover {
+  background-color: #345b6e;
+  color: #fff;
+}
+
+.logo {
+  width:80px;
+  height: auto;
+  padding:5px 10px 5px 10px;
+}
+
+
+
+/* Divers boutons */
+
+.button100 {
+	border-radius: 5px;
+	color: #fff;
+	font-size: .8em;
+	font-weight: normal;
+	padding: 3px;
+	margin:5px;
+	text-decoration: none;
+	border: none;
+	width: 100px;
+}
+
+.button300 {
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 8px;
+	margin:8px;
+	text-decoration: none;
+	border: none;
+	width: 300px;
+}
+
+.buttonGreen {
+  background-color: #15663f;
+}
+
+.buttonGreen:hover {
+  background-color: #10472d;
+}
+
+.buttonBlue {
+  background-color: #1f5bab;
+}
+
+.buttonBlue:hover {
+  background-color: #16427d;
+}
+
+.buttonRed {
+  background-color: #be4822;
+}
+
+.buttonRed:hover {
+  background-color: #802e14;
+}
+
+
+/* Affichages formulaire */
+
+.formContainer {
+  border-radius: 10px;
+  background-color: #e2ceaf;
+  color: #222;
+  font-size: 1em;
+  padding: 10px;
+  margin:10px;
+  border: 1px solid #999;
+  width:600px;
+}
+
+.boutonSend {
+  border-radius: 5px;
+  background-color: #c44406;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: normal;
+  padding: 5px;
+  margin:10px;
+  text-decoration: none;
+  border: none;
+  width: 150px;
+}
+
+.boutonSend:hover {
+  background-color: #862e03;
+  color: #fff;
+}
+
+
+/* Affichages divers */
+
+.resultats {
+  border-radius: 10px;
+  background-color: #fff;
+  color: #222;
+  font-size: 1em;
+  padding: 10px;
+  margin:20px;
+  border: 1px solid #c1baba;
+  width:80%;
+}
+
+.espace5 {
+  margin: 5px;
+  padding: 3px;
+}
+
+/* Tableau */
+
+td {
+margin:2px;
+padding:2px;
+background-color: #cbd2df;
+font-size: 1em;
+font-weight: normal;
+}
+
+table tr:nth-child(odd) td {
+    background-color: #d2e9d5;
+}
+
+table tr:nth-child(even) td {
+    background-color: #e9e0c9;
+}
