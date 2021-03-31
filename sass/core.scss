@@ -3,3 +3,21 @@
   margin: 0;
   padding: 0;
 }
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+// Color
+
+$yellow : rgb(247, 210, 0);
+$black : #000;
+$white : #fff;
+
+body{
+  font-family: roboto;
+}
+
+h1{
+  font-family: 'Dela Gothic One', cursive;
+}

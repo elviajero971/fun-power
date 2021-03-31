@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300);
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: roboto;
+}
+
+h1 {
+  font-family: "Dela Gothic One", cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: roboto;
+}
+
+h1 {
+  font-family: "Dela Gothic One", cursive;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.containerShowMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+ul li {
+  margin: 0 0 24px;
+  list-style: none;
+}
+
+.the-arrow {
+  width: 1px;
+  transition: all 0.2s;
+}
+.the-arrow.-left {
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+.the-arrow.-left > .shaft {
+  width: 0;
+  background-color: #4c4c4c;
+}
+.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+  width: 0;
+  background-color: #4c4c4c;
+}
+.the-arrow.-left > .shaft:before {
+  transform: rotate(0);
+}
+.the-arrow.-left > .shaft:after {
+  transform: rotate(0);
+}
+.the-arrow.-right {
+  top: 3px;
+}
+.the-arrow.-right > .shaft {
+  width: 1px;
+  transition-delay: 0.2s;
+}
+.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+  width: 8px;
+  transition-delay: 0.3s;
+  transition: all 0.5s;
+}
+.the-arrow.-right > .shaft:before {
+  transform: rotate(40deg);
+}
+.the-arrow.-right > .shaft:after {
+  transform: rotate(-40deg);
+}
+.the-arrow > .shaft {
+  background-color: #4c4c4c;
+  display: block;
+  height: 1px;
+  position: relative;
+  transition: all 0.2s;
+  transition-delay: 0;
+  will-change: transform;
+}
+.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+  background-color: #4c4c4c;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s;
+  transition-delay: 0;
+}
+.the-arrow > .shaft:before {
+  transform-origin: top right;
+}
+.the-arrow > .shaft:after {
+  transform-origin: bottom right;
+}
+
+.animated-arrow {
+  display: inline-block;
+  color: #4c4c4c;
+  font-size: 1.25em;
+  font-style: italic;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s;
+}
+.animated-arrow:hover {
+  color: #808080;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft {
+  width: 64px;
+  transition-delay: 0.1s;
+  background-color: #808080;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  width: 8px;
+  transition-delay: 0.1s;
+  background-color: #808080;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+  transform: rotate(40deg);
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  transform: rotate(-40deg);
+}
+.animated-arrow:hover > .main {
+  transform: translateX(17px);
+  transform: translateX(80px);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+  width: 0;
+  transform: translateX(200%);
+  transition-delay: 0;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+  width: 0;
+  transition-delay: 0;
+  transition: all 0.1s;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+  transform: rotate(0);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+  transform: rotate(0);
+}
+.animated-arrow > .main {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+.animated-arrow > .main > .text {
+  margin: 0 16px 0 0;
+  line-height: 1;
+}
+.animated-arrow > .main > .the-arrow {
+  position: relative;
+}
+
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+body .container {
+  width: 938px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  right: 0;
+  transform: translateY(-50%);
+  margin: auto;
+}
+body .container .card {
+  margin: 0 auto;
+  display: inline-block;
+  margin-right: 30px;
+  transform: scale(0);
+  width: 280px;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s;
+  cursor: pointer;
+  opacity: 0.5;
+  box-shadow: 0px 17px 46px -10px #777777;
+  height: 470px;
+  border-radius: 14px;
+}
+body .container .card:nth-of-type(1) {
+  animation: intro 1s 0.1s forwards;
+}
+body .container .card:nth-of-type(2) {
+  animation: intro 1s 0.2s forwards;
+}
+body .container .card:nth-of-type(3) {
+  animation: intro 1s 0.3s forwards;
+}
+body .container .card:nth-of-type(1) {
+  background: -webkit-linear-gradient(45deg, #c96881 0%, #f7b695 100%);
+}
+body .container .card:nth-of-type(2) {
+  background: -webkit-linear-gradient(45deg, #6B6ECC 0%, #89BFDF 100%);
+}
+body .container .card:nth-of-type(3) {
+  background: -webkit-linear-gradient(45deg, #81B77B 0%, #A3E3C3 100%);
+}
+body .container .card:hover .card_inner__header img {
+  left: -50px;
+  transition: all 3.4s linear;
+}
+body .container .card:hover .card_inner__cta button {
+  transform: scale(1);
+}
+body .container .card:nth-of-type(1):hover .card_inner__circle img {
+  animation: launch 1s forwards;
+}
+body .container .card:nth-of-type(1) .card_inner__circle img {
+  top: 22px;
+  left: 1px;
+}
+body .container .card:nth-of-type(2):hover .card_inner__circle img {
+  animation: spin 1s forwards;
+}
+body .container .card:nth-of-type(2) .card_inner__circle img {
+  top: 22px;
+}
+body .container .card:nth-of-type(3):hover .card_inner__circle img {
+  animation: fly 1s forwards;
+}
+body .container .card:nth-of-type(3) .card_inner__circle img {
+  top: 22px;
+  left: 1px;
+}
+body .container .card:hover {
+  opacity: 1;
+}
+body .container .card_inner__circle {
+  overflow: hidden;
+  width: 70px;
+  position: absolute;
+  background: #F1F0ED;
+  z-index: 10;
+  height: 70px;
+  border-radius: 100px;
+  left: 0;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.28);
+  right: 0;
+  margin: auto;
+  border: 4px solid white;
+  top: 82px;
+}
+body .container .card_inner__circle img {
+  height: 26px;
+  position: relative;
+  top: 17px;
+  transition: all 0.2s;
+}
+body .container .card_inner__header {
+  height: 120px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  overflow: hidden;
+}
+body .container .card_inner__header img {
+  width: 120%;
+  position: relative;
+  top: -30px;
+  left: 0;
+  transition: all 0.1s linear;
+}
+body .container .card_inner__content {
+  padding: 20px;
+}
+body .container .card_inner__content .price {
+  color: white;
+  font-weight: 800;
+  font-size: 70px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+}
+body .container .card_inner__content .text {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 100;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 16px;
+}
+body .container .card_inner__content .title {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.64);
+  margin-top: 40px;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+body .container .card_inner__cta {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+}
+body .container .card_inner__cta button {
+  padding: 16px;
+  box-shadow: 0px 0px 40px 4px #F76583, 0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
+  width: 100%;
+  background: -webkit-linear-gradient(-90deg, #fe5e7d 0%, #e5375b 100%);
+  border: none;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: white;
+  outline: none;
+  font-size: 20px;
+  border-radius: 6px;
+  transform: scale(0.94);
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s 0.1s;
+}
+body .container .card_inner__cta button span {
+  text-shadow: 0px 4px 18px #BA3F57;
+}
+body .container .card_inner__cta button:hover {
+  box-shadow: 0px 0px 60px 8px #F76583, 0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
+}
+
+@keyframes launch {
+  0% {
+    left: 1px;
+  }
+  25% {
+    top: -50px;
+    left: 1px;
+  }
+  50% {
+    left: -100px;
+  }
+  75% {
+    top: 100px;
+    transform: rotate(40deg);
+  }
+  100% {
+    left: 1px;
+  }
+}
+@keyframes fly {
+  0% {
+    left: 0px;
+  }
+  25% {
+    top: -50px;
+    left: 50px;
+  }
+  50% {
+    left: -130px;
+  }
+  75% {
+    top: 60px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes intro {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1.06);
+  }
+  50% {
+    transform: scale(0.965);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: roboto;
+}
+
+h1 {
+  font-family: "Dela Gothic One", cursive;
+}
+
+h1 {
+  font-family: "Dela Gothic One", cursive;
+  color: #f7d200;
+}
+
+h2 {
+  font-family: "Dela Gothic One", cursive;
+  color: #000;
+}
+
+/*# sourceMappingURL=main.css.map */
