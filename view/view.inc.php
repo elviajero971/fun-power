@@ -57,6 +57,9 @@ function navigationRender() {
 		<a href="$ROUTEBASE?page=showUser&action=list" class="menuButton">
 			Voir les utilisateurs
 		</a>
+		<a href="$ROUTEBASE?page=showSubscription&action=list" class="menuButton">
+			Voir les souscriptions
+		</a>
 		<a href="$ROUTEBASE?page=createSubscription&action=start" class="menuButton">
 			Souscrire un abonnement
 		</a>

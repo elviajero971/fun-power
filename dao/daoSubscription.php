@@ -13,10 +13,9 @@ class SubscriptionDao extends Dao {
     VALUES
       (:date, :progId, :userId)
       ";
-
+      
     public function insert($form_firstname, $form_lastname, $form_email, $form_program){
         $myConnection = Dao::connect();
-        
         $request = $myConnection->prepare(self::SQL_INSERT_USER);
         $request->bindValue(':userFirstName', $form_firstname);
         $request->bindValue(':userLastName', $form_lastname);
@@ -41,25 +40,31 @@ class SubscriptionDao extends Dao {
     }
 
     const SQL_ALL_SUBSCRIPTIONS = "
-    SELECT * FROM subscription
+    SELECT * FROM subscription 
+    INNER JOIN program ON subscription.fk_prog_id = program.prog_id
+    INNER JOIN user ON subscription.fk_user_id = user.user_id
     ";
 
     public function getAll(){
         $myConnection = Dao::connect();
         $request = $myConnection->prepare(self::SQL_ALL_SUBSCRIPTIONS);
         if (! $request->execute()){
-            throw new BlogException(1, "Cannot get the list of Posts");
+          echo "Cannot get the list of Subs";
         } else {
           $data = $request->fetchAll(PDO::FETCH_ASSOC);
-          $articlesData = [];
+          $subsData = [];
           foreach ($data as $value) {
-              $articlesData [] = new Article(
-                $value["id"],
-                $value["title"],
-                $value["content"]
+              $subsData [] = new Subscription(
+                $value["subs_id"],
+                $value["subs_date"],
+                $value["prog_title"],
+                $value["prog_price"],
+                $value["user_name"],
+                $value["user_firstname"],
+                $value["user_email"]
               );
           }
-          return $articlesData;
+          return $subsData;
         }
     }
 }

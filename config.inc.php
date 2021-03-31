@@ -13,5 +13,6 @@
     "showUser"=>"controlShowUser",
     "createProgram"=>"controlCreateProgram",
     "createSubscription"=>"controlCreateSubscription",
-    "showProgram"=>"controlShowPrograms"
+    "showProgram"=>"controlShowPrograms",
+    "showSubscription"=>"controlShowSubscriptions"
   ]);

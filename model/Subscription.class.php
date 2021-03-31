@@ -3,44 +3,51 @@
 class Subscription {
     private $id = "";
     private $subsDate = "";
+    private $prog = "";
+    private $price = "";
+    private $name = "";
+    private $lastname = "";
+    private $email = "";
     // fk_progId
     // fk_userId
     
 
-    public function __construct($id="", $progTitle,$progDuration, $progDescription, $progPrice) {
+    public function __construct($id="", $subsDate, $prog, $price ,$name, $lastname, $email) {
         $this->id = $id;
-        $this->progTitle = $progTitle;
-        $this->progDuration = $progDuration;
-        $this->progDescription = $progDescription;
-        $this->progPrice = $progPrice;
+        $this->subsDate = $subsDate;
+        $this->prog = $prog;
+        $this->price = $price;
+        $this->name = $name;
+        $this->lastname = $lastname;
+        $this->email = $email;
     }
-
-    public function show() {
-        echo "<br><hr>Données transmises :<br/>";
-        echo "Titre : <b>".$this->progTitle."</b><br/>";
-        echo "Description : <b>".$this->progDescription."</b><br/>";
-        echo "Durée : <b>".$this->progDuration."</b><br/>";
-        echo "Prix : <b>".$this->progPrice."</b><br/>";
-      }
 
     public function getId() {
       return $this->id;
     }
 
-    public function getProgTitle() {
-      return $this->progTitle;
+    public function getsubsDate() {
+      return $this->subsDate;
     }
 
-    public function getProgDescription() {
-      return $this->progDescription;
+    public function getProg() {
+      return $this->prog;
     }
 
-    public function getProgDuration() {
-      return $this->progDuration;
+    public function getPrice() {
+      return $this->price;
     }
 
-    public function getProgPrice() {
-      return $this->progPrice;
+    public function getName() {
+      return $this->name;
+    }
+
+    public function getLastName() {
+      return $this->lastname;
+    }
+
+    public function getEmail() {
+      return $this->email;
     }
 
 }
