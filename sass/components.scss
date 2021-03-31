@@ -1,6 +1,26 @@
 @import 'core.scss';
 
+/////////////////////////////////////// Navbar  //////////////////////////////////////////////////////////
 
+.nav{
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  background-color: #131212;
+  opacity: 0.2;
+  justify-content: space-between;
+
+  .logo{
+
+  }
+
+  .item{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+  }
+}
 
 /////////////////////////////////////// ShowMore  //////////////////////////////////////////////////////////
 
@@ -211,7 +231,7 @@ body{
     text-decoration:none;
     color:white;
   }
-  .container{
+  .containerPricing{
     width:938px;
     position:absolute;
     top:50%;
@@ -358,9 +378,8 @@ body{
           width:200px;
           button{
             padding:16px;
-            box-shadow: 0px 0px 40px 4px #F76583, 0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
             width:100%;
-            background: -webkit-linear-gradient(-90deg, #fe5e7d 0%,#e5375b 100%);
+            background: -webkit-linear-gradient(-90deg, $yellow 0%,rgb(190, 163, 4) 100%);
             //background: -moz-linear-gradient(-90deg, #fe5e7d 0%,#e5375b 100%);
             border:none;
             font-family: 'Yanone Kaffeesatz', sans-serif;
