@@ -27,7 +27,7 @@ section {
 }
 
 .hero-section {
-  background-image: url("../img/2.png");
+  background-image: url("./img/2.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -64,10 +64,11 @@ section {
   width: 100%;
   height: 100vh;
   display: flex;
+  margin-top: 50px;
 }
 .about-section .about-section__img {
   width: 50%;
-  background-image: url("../img/3.jpg");
+  background-image: url("./img/3.jpg");
   background-position: center;
   background-size: cover;
   justify-content: center;
@@ -114,6 +115,9 @@ section {
     width: 100%;
   }
 }
+.pricing-section {
+  margin-top: 35px;
+}
 .pricing-section .pricing-section__header {
   display: flex;
   align-items: center;
@@ -153,7 +157,8 @@ section {
   }
 }
 .cta-section .cta-section__header {
-  background-image: url("../img/1.png");
+  margin-top: 35px;
+  background-image: url("./img/1.png");
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -237,14 +242,53 @@ h1 {
   position: absolute;
   top: 0;
   align-items: center;
+  /*glow for webkit*/
+  /*glow for mozilla*/
+}
+.nav .logo {
+  text-align: center;
+  font-size: 3em;
+  margin-left: 50px;
+}
+.nav .logo a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #ffe44b;
+  font-family: Audiowide;
+  -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+  animation: neon5 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #555, 0 0 20px #555, 0 0 30px #555, 0 0 40px #ffe44b, 0 0 70px #ffe44b, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #555, 0 0 10px #555, 0 0 15px #555, 0 0 20px #ffe44b, 0 0 35px #ffe44b, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+@-moz-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #555, 0 0 20px #555, 0 0 30px #555, 0 0 40px #ffe44b, 0 0 70px #ffe44b, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #555, 0 0 10px #555, 0 0 15px #555, 0 0 20px #ffe44b, 0 0 35px #ffe44b, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #555, 0 0 20px #555, 0 0 30px #555, 0 0 40px #ffe44b, 0 0 70px #ffe44b, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #555, 0 0 10px #555, 0 0 15px #555, 0 0 20px #ffe44b, 0 0 35px #ffe44b, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
 }
 .nav .item {
   display: flex;
   justify-content: space-around;
   width: 40%;
-}
-.nav h1 a {
-  color: #ffe44b;
 }
 
 * {
@@ -417,7 +461,7 @@ body .pricing-section__container .card {
   transition: all 0.2s;
   cursor: pointer;
   opacity: 0.5;
-  box-shadow: 0px 17px 46px -10px #777777;
+  box-shadow: 0px 17px 46px -10px #555777;
   height: 470px;
   border-radius: 14px;
 }
@@ -528,6 +572,7 @@ body .pricing-section__container .card_inner__content .title {
   letter-spacing: 1px;
 }
 body .pricing-section__container .card_inner__cta {
+  position: absolute;
   bottom: -24px;
   left: 0;
   right: 0;
@@ -547,6 +592,12 @@ body .pricing-section__container .card_inner__cta button {
   transform: scale(0.94);
   cursor: pointer;
   transition: box-shadow 0.3s, transform 0.3s 0.1s;
+}
+body .pricing-section__container .card_inner__cta button span {
+  text-shadow: 0px 4px 18px #BA3F57;
+}
+body .pricing-section__container .card_inner__cta button:hover {
+  box-shadow: 0px 0px 60px 8px #F76583, 0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
 }
 
 @keyframes launch {
